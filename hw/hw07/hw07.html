@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>GRAYUP</title>
+    <style>
+        div h1 {
+            font-weight: bold;
+            margin: 0;
+        }
+        #main {
+            float: left;
+            margin: 0% 25px 40px;
+            padding-left: 0;
+        }
+        #info {
+            background-color: gainsboro;
+            float: right;
+            margin-top: 0;
+            margin-right: 20px;
+            padding: 5px 4px;
+
+        }
+        #info a {
+            display: inline;
+        }
+        .list {
+            margin: 0 30px;
+        }
+        .item {
+            margin: 10px;
+            list-style: none;
+        }
+        #grid{
+            display:grid;
+            grid-template-columns: 100px 1fr;
+        }
+        #page{
+            margin-left: 210px;
+            margin-top: 30px;
+        }
+        @media(max-width:600px){
+            #grid{
+               display:block;
+        }
+        }
+
+        a:link {
+            color: black;
+        }
+        a:hover {
+            color: blueviolet;
+        }
+        body {
+            font-family: '나눔고딕', Arial, Helvetica, sans-serif;
+        }
+        #footer{
+            color:grey;
+            font-size: 8px;
+        }
+        .grey{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+        <header>
+        <div>
+            <h1>GREYUP</h1>
+        </div>
+        <img src="./img/main.jpg" height="600px">
+    
+        <div id="info">
+            <a class="list" href="./info/login.html">LOGIN</a>
+            <a class="list" href="./info/join.html">JOIN</a>
+            <a class="list" href="./info/cart.html">CART</a>
+        </div>
+        </header>
+    </div>
+    <hr>
+<div id="grid">
+    <ul id="menu">
+        <li class="item">
+            <a href="./menu/top.html" target="iframe">Top</a>
+        </li>
+        <li class="item">
+            <a href="./menu/bottom.html" target="iframe">Bottom</a>
+        </li>
+        <li class="item">
+            <a href="./menu/acc.html" target="iframe">Acc</a>
+        </li>
+        <li class="item">
+            <a href="./menu/notice.html" target="iframe">Notice</a>
+        </li>
+    </ul>
+    <div id="page">
+        <iframe src="basic.html" width="1150" height="3000" name="iframe"></iframe>
+    </div>
+</div>
+<footer>
+    <div id="footer">
+        <ul class="grey">
+            <li>copyright by chan</li>
+            <li>20121</li>
+            <li>greyup</li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>
